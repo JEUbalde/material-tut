@@ -6,15 +6,18 @@ export default function Login(){
 
     return(
         <Container>
-            <Grid container>
+            <Grid container
+            sx={{
+                justifyContent: 'center'
+            }}>
                 <Grid item
                 lg={6}
-                >
+                >   
                     <Box
                     sx={{
                         my: 2,
                         p: 1,
-                        bgcolor: 'lightgray',
+                        // bgcolor: 'lightgray',
                     }}
                     >
                         <Paper elevation={2}
@@ -34,6 +37,7 @@ export default function Login(){
                                 User ID
                             </Typography>
                             <TextField 
+                                fullWidth
                                 id="outlined-basic"
                                 variant="outlined"
                             />
@@ -44,6 +48,7 @@ export default function Login(){
                                 Password
                             </Typography>
                             <TextField 
+                                fullWidth
                                 id="outlined-basic"
                                 variant="outlined"
                             />
