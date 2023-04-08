@@ -22,11 +22,13 @@ export default function Login(){
                     >
                         <Paper elevation={2}
                         sx={{
-                        p: 2,  
+                        p: 2,
+                        my: 2  
                         }}>
                             <Typography variant='h4'
                                 sx={{
-                                    my: 1,
+                                    my: 2,
+                                    fontWeight:'medium'
                                 }}>
                                 Login
                             </Typography>
@@ -40,6 +42,7 @@ export default function Login(){
                                 fullWidth
                                 id="outlined-basic"
                                 variant="outlined"
+                                label = "User ID"
                             />
                             <Typography variant='h6'
                                 sx={{
@@ -51,7 +54,9 @@ export default function Login(){
                                 fullWidth
                                 id="outlined-basic"
                                 variant="outlined"
+                                label = "Password"
                             />
+                            <Button variant='contained' sx={{my:2}}>Login</Button>
                         </Paper>
                     </Box>
                 </Grid>
